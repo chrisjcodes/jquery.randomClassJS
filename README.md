@@ -1,5 +1,5 @@
 # randomClassJS
-A jQuery plugin that generates randomly numbered classes and applies them to a a set of elements
+A jQuery plugin that generates randomly numbered classes and applies them to a set of elements
 
 ## Basic Usage
 First, include jQuery and randomClass at the end of your HTML document
