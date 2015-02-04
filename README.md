@@ -1,2 +1,29 @@
 # randomClassJS
-A jQuery plugin that generates randomly numbered classes on a set of elements
+A jQuery plugin that generates randomly numbered classes and applies them to a a set of elements
+
+## Basic Usage
+First, include jQuery and randomClass at the end of your HTML document
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="jquery.randomClass.js"></script>
+
+Then implement as follows:
+	<script type="text/javascript">
+	$('.box').randomClass();
+	</script>
+
+This will take all elements with the class "box" from the DOM and assign them a class of "randomClass$" ("$" represent the random number). The numbers will range from 0 to the total number of elements retrived. So 8 elements means each element with receive a random class from 0-7, no numbers will be repeated.
+
+## Available Options
+The default options are as follows:
+		count: 0, //int
+		repeat: false, //bool
+		customClass: "randomClass" //string
+
+### Count
+Setting *count* will allow you to set a number of possible classes. So for instance you have 10 elements but you want to randomize through 20 classes, set *count: 20*
+
+### Repeat
+Setting *repeat* to *true* will allow repeat classes to be generated rather than only allowing each class once
+
+### customClass
+This accepts a string to replace the default class of "randomClass" with.
