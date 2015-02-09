@@ -44,3 +44,7 @@ This accepts a string to replace the default class of "randomClass" with.
 
 ### after
 This accepts a function that fires after the classes have been added
+
+
+
+**A Thanks to Ian Wright for writing something similar and giving me the idea to plugin-ize it.**
