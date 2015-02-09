@@ -34,7 +34,7 @@ $.fn.randomClass = function(options){
 			var currentItem = $(this);
 			currentItem.addClass(settings.customClass + selectedNum);
 			count--;
-		});
+		}, settings.after());
 
 	} else {
 		return this.each(function(){
@@ -42,10 +42,9 @@ $.fn.randomClass = function(options){
 			var currentItem = $(this);
 			currentItem.addClass(settings.customClass + randomNum);
 			count--;
-		});
+		},settings.after());
 	}
-
-	settings.after();
+	
 
 };
 

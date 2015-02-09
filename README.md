@@ -24,15 +24,19 @@ The default options are as follows:
 count: 0, //int
 repeat: false, //bool
 customClass: "randomClass" //string
+after: function(){} //function
 ```
 
-### Count
+### count
 Setting *count* will allow you to set a number of possible classes. So for instance you have 10 elements but you want to randomize through 20 classes, set *count: 20*. 
 
 *Setting a count lower than the number of elements returned from the class with result in the default count being used.*
 
-### Repeat
+### repeat
 Setting *repeat* to *true* will allow repeat classes to be generated rather than only allowing each class once
 
 ### customClass
 This accepts a string to replace the default class of "randomClass" with.
+
+### after
+This accepts a function that fires after the classes have been added
