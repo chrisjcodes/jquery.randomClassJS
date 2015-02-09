@@ -21,10 +21,12 @@ The numbers will range from 0 to the total number of elements retrived. So 8 ele
 ## Available Options
 The default options are as follows:
 ```
-count: 0, //int
-repeat: false, //bool
-customClass: "randomClass" //string
-after: function(){} //function
+$('.box').randomClass({
+	count: 0, //int
+	repeat: false, //bool
+	customClass: "randomClass" //string
+	after: function(){} //function
+});
 ```
 
 ### count
