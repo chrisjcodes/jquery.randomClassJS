@@ -8,6 +8,8 @@ First, include jQuery and randomClass at the end of your HTML document
 <script src="jquery.randomClass.js"></script>
 ```
 
+[Check Out This Usage Example!](http://cjthedizzy.github.io/randomClass_ex/)
+
 Then implement as follows:
 ```
 <script type="text/javascript">
