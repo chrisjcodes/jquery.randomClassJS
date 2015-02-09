@@ -4,7 +4,8 @@ $.fn.randomClass = function(options){
 	var defaults = {
 		count: 0,
 		repeat: false,
-		customClass: "randomClass"
+		customClass: "randomClass",
+		after: function(){}
 	}
 
 	var settings = $.extend({}, defaults, options );
@@ -44,7 +45,8 @@ $.fn.randomClass = function(options){
 		});
 	}
 
+	settings.after();
+
 };
 
 }( jQuery ));
-

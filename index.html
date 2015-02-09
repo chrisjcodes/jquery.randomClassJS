@@ -52,7 +52,11 @@
 
 <script src="jquery.randomClass.js"></script>
 <script type="text/javascript">
-	$('.box').randomClass();
+	$('.box').randomClass({
+		after:function(){
+			console.log("Working");
+		}
+	});
 </script>
 </body>
 </html>
