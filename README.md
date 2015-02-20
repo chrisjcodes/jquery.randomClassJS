@@ -26,7 +26,8 @@ The default options are as follows:
 $('.box').randomClass({
 	count: 0, //int
 	repeat: false, //bool
-	customClass: "randomClass" //string
+	customClass: "randomClass", //string
+	customArray:[], //array
 	after: function(){} //function
 });
 ```
@@ -41,6 +42,9 @@ Setting *repeat* to *true* will allow repeat classes to be generated rather than
 
 ### customClass
 This accepts a string to replace the default class of "randomClass" with.
+
+### customArray
+This accepts an array of class names rather than using the randomized numbered classes. If the array has enough class names to be used once for the number of elements returned, nothing will repeat. If there are not enough class names, it will repeat.
 
 ### after
 This accepts a function that fires after the classes have been added
