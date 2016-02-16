@@ -44,7 +44,7 @@ Setting *repeat* to *true* will allow repeat classes to be generated rather than
 This accepts a string to replace the default class of "randomClass" with.
 
 ### customArray
-This accepts an array of class names rather than using the randomized numbered classes. If the array has enough class names to be used once for the number of elements returned, nothing will repeat. If there are more or less class names than elements, it will repeat.
+This accepts an array of class names rather than using the randomized numbered classes. If the array has enough class names to be used once for the number of elements returned, nothing will repeat. If there are less class names than elements, it will repeat.
 
 ### after
 This accepts a function that fires after the classes have been added
