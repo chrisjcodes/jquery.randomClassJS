@@ -12,7 +12,9 @@
             elsLength = this.length,
             classNums = [],
             count = settings.count,
-            customArrayLen = settings.customArray.length;
+            customArrayLen = settings.customArray.length,
+            randomNum,
+            selected;
 
 
         if (customArrayLen > 0) {
@@ -20,19 +22,15 @@
 
             if (count < elsLength) {
                 return this.each(function() {
-                    var randomNum = Math.floor(Math.random() * count),
-                        currentItem = $(this);
-
-                    currentItem.addClass(settings.customArray[randomNum]);
+                    randomNum = Math.floor(Math.random() * count);
+                    $(this).addClass(settings.customArray[randomNum]);
                 }, settings.after());
 
             } else {
                 return this.each(function() {
-                    var randomNum = Math.floor(Math.random() * count),
-                        selectedClass = String(settings.customArray.splice(randomNum, 1)),
-                        currentItem = $(this);
-
-                    currentItem.addClass(selectedClass);
+                    randomNum = Math.floor(Math.random() * count);
+                    selected = String(settings.customArray.splice(randomNum, 1));
+                    $(this).addClass(selected);
                     count--;
                 }, settings.after());
             }
@@ -50,20 +48,16 @@
 
         if (settings.repeat === false) {
             return this.each(function() {
-                var randomNum = Math.floor(Math.random() * count),
-                    selectedNum = classNums.splice(randomNum, 1),
-                    currentItem = $(this);
-
-                currentItem.addClass(settings.customClass + selectedNum);
+                randomNum = Math.floor(Math.random() * count);
+                selected = classNums.splice(randomNum, 1);
+                $(this).addClass(settings.customClass + selected);
                 count--;
             }, settings.after());
 
         } else {
             return this.each(function() {
-                var randomNum = Math.floor(Math.random() * count),
-                    currentItem = $(this);
-
-                currentItem.addClass(settings.customClass + randomNum);
+                randomNum = Math.floor(Math.random() * count);
+                $(this).addClass(settings.customClass + randomNum);
             }, settings.after());
         }
 
